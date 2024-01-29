@@ -317,14 +317,7 @@ namespace ConsoleApp1
             Console.WriteLine("*******************************************************");
         }
 
-            //var passenger = _efDbContext.Passengers.FirstOrDefault(_ => _.NationalCode == natioCode);
 
-              //  var busChair = bus.BusChairs.FirstOrDefault(_ => _.Number == busChairNumber);
-               //var busChair = bus.BusChairs.FirstOrDefault(_ => _.Id == busChairNumber);
-
-                //if (busChair != null)
-                //{
-            //var bus = _efDbContext.Buses.FirstOrDefault(_ => _.BusName == busId);
         public static void AddTicket(int passengerid, int  busId, int busChairNumber)
         {
 
@@ -396,7 +389,7 @@ namespace ConsoleApp1
         }
         public static void Canceltikets(int passengerId,int reservId, string cancellationReason)
         {
-            //var passenger = _efDbContext.Passengers.FirstOrDefault(p => p.NationalCode == nationalCode);
+
             var passenger = _efDbContext.Passengers.FirstOrDefault(_ => _.Id == passengerId);
             
             if (passenger != null )
