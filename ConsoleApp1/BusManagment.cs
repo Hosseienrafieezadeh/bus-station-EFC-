@@ -179,83 +179,7 @@ namespace ConsoleApp1
             }
         }
         
-        //public static void ShowBus()
-        //{
-        //    foreach (var bus in GetEfDbBuses())
-        //    {
-        //        var buy = bus.CanBuy==true? "Yes" : "No";
-        //        var reserv = bus.CanReserve==true ? "Yes" : "No";
-              
-        //        Console.WriteLine("*******************************************************");
-        //        Console.WriteLine($"id:{bus.Id} -name:{bus.BusName} - bus type:{bus.busType} - price:{bus.Price} -" +
-        //            $" buy:{buy} reserv:{reserv} bustype:{bus.busType} travel profit:{bus.TicketsMoney}" +
-        //            $"- Trip Origin:{bus.Trip?.Origin} - Trip Destination:{bus.Trip?.Destination}");
-        //        Console.WriteLine("*******************************************************");
 
-        //        if (bus.busType == BusType.Vip)
-        //        {
-        //            int numberRow = 3;
-        //            int ThingsOnTheTable = 0;
-        //            int row = 1;
-        //            foreach (var chair in bus.BusChairs)
-        //            {
-        //                var tik = (chair.Ticket != null ? "bb" : (chair.Reservation != null ? "rr" : chair.Status));
-
-
-
-        //                Console.Write($"{tik} ");
-        //                    ThingsOnTheTable++;
-
-        //                    if (ThingsOnTheTable % numberRow == 0)
-        //                    {
-        //                        Console.WriteLine();
-        //                        row++;
-        //                    }
-        //                    if (row == 6 || row == 7 || row == 8)
-        //                    {
-        //                        numberRow = 1;
-        //                    }
-        //                    if (row == 9)
-        //                    {
-        //                        numberRow = 3;
-        //                    }
-                        
-        //            }
-        //            Console.WriteLine("_________________________________"); 
-                   
-        //        }
-
-
-        //        else 
-        //        {
-        //            int numberRow = 4;
-        //            int ThingsOnTheTable = 0;
-        //            int row = 1;
-        //            foreach (var chair in bus.BusChairs)
-        //            {
-        //                var tik = (chair.Ticket != null ? "bb" : (chair.Reservation != null ? "rr" : chair.Status));
-
-        //                Console.Write($"{tik} ");
-        //                ThingsOnTheTable++;
-
-
-        //                if (ThingsOnTheTable % numberRow == 0)
-        //                {
-        //                    Console.WriteLine();
-        //                    row++;
-        //                }
-        //                if (row == 6 || row == 7)
-        //                {
-        //                    numberRow = 2;
-        //                }
-        //                if (row == 8)
-        //                {
-        //                    numberRow = 4;
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
 
         public static void AddTrips(string origin, string destination) 
         {
@@ -434,12 +358,7 @@ namespace ConsoleApp1
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("buy  successful");
                 Console.ForegroundColor = ConsoleColor.White;
-                //}
 
-                //else
-                //{
-                //    throw new Exception("Bus chair not found");
-                //}
             }
             else
             {
